@@ -1,45 +1,111 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# ----------------------------------------------------------------------------
+# Flutter & Dart
+# ----------------------------------------------------------------------------
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
 /coverage/
 
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
+# ----------------------------------------------------------------------------
+# Android
+# ----------------------------------------------------------------------------
+*.keystore
+*.jks
+*.properties
+!android/key.properties
+!android/gradle.properties
+!android/local.properties
+!android/settings.gradle*
+!android/build.gradle*
+local.properties
+android/local.properties
+android/key.properties
+android/app/src/main/res/raw/
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ----------------------------------------------------------------------------
+# iOS / macOS
+# ----------------------------------------------------------------------------
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+*.app
+*.ipa
+*.dSYM/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Flutter.podspec
+macos/Flutter/ephemeral/
+DerivedData/
+Podfile.lock
+Pods/
+.last_build_id
+
+# ----------------------------------------------------------------------------
+# Web
+# ----------------------------------------------------------------------------
+.stack-work/
+
+# ----------------------------------------------------------------------------
+# IDEs & Editors
+# ----------------------------------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.history
+.history/
+
+# ----------------------------------------------------------------------------
+# OS Generated
+# ----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ----------------------------------------------------------------------------
+# Local/Temporary Analysis & Logs (Specific to this project)
+# ----------------------------------------------------------------------------
+*.log
+*.bak
+analysis_*.txt
+analyze_results*.txt
+build_error*.log
+fresh_analysis.txt
+analysis.json
+analysis_final.json
+analysis_report.txt
+analysis_dart.txt
+analysis_full.txt
+analysis_machine.txt
+analysis_verbose.txt
+analysis_fresh.txt
+themes_count*.txt
+tmp/
+# scratch/  # Keep scripts, but ignore potential large results
+scratch/*.txt
+scratch/*.log
+
+# ----------------------------------------------------------------------------
+# Miscellaneous
+# ----------------------------------------------------------------------------
+.env*
+migrate_working_dir/
+migrate_opacity_final.py
+node_modules/
+
